@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# alx-listing-app
+=======
 # ALX Listing App
 
 ## 📌 Project Overview
@@ -13,3 +16,4 @@ ALX Listing App is a simplified **Airbnb clone** that displays property listings
 1. Install dependencies:
    ```sh
    npm install
+>>>>>>> 0dd95f9 (Initial commit - Next.js Airbnb Clone setup)

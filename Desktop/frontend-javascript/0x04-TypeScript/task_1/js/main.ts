@@ -1,20 +1,25 @@
 // Define the Teacher interface
 interface Teacher {
-    readonly firstName: string;  // Readonly: can only be set when initialized
-    readonly lastName: string;   // Readonly: can only be set when initialized
+    readonly firstName: string;
+    readonly lastName: string;
     fullTimeEmployee: boolean;
-    yearsOfExperience?: number;  // Optional property
+    yearsOfExperience?: number;
     location: string;
-    [key: string]: any;  // Allows additional attributes (e.g., contract)
+    [key: string]: any; // Allows additional properties
+}
+
+// Define the Directors interface that extends Teacher
+interface Directors extends Teacher {
+    numberOfReports: number;
 }
 
 // Example usage
-const teacher3: Teacher = {
+const director1: Directors = {
     firstName: 'John',
     lastName: 'Doe',
-    fullTimeEmployee: false,
     location: 'London',
-    contract: false,  // Additional property
+    fullTimeEmployee: true,
+    numberOfReports: 17,
 };
 
-console.log(teacher3);
+console.log(director1);
